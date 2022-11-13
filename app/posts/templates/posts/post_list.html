@@ -1,0 +1,19 @@
+{% extends 'base.html' %}
+{% block title %}Book List{% endblock %}
+{% block content %}
+<h1>Post List</h1>
+<table>
+    <thead>
+        <tr>
+            <th colspan="2">Title</th>
+        </tr>
+    </thead>
+    <tbody>
+        {% for post in posts %}
+        <tr>
+            <td>{{ post.title }}</td>
+        </tr>
+        {% endfor %}
+    </tbody>
+</table>
+{% endblock content %}
